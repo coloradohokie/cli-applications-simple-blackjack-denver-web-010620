@@ -36,13 +36,13 @@ def hit?(argument)
   prompt_user
   resp = get_user_input
   if resp == 'h'
-    deal_card
+    deal_card + argument
   elsif resp == 's'
-    return false
+    return argument
   elsif resp == 'exit'
     end_game(argument)
   else
-    invalid_command
+    prompt_user
   end
 end
 
