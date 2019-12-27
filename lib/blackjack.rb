@@ -62,8 +62,7 @@ def runner
   until total > 21 do
     x = hit?(total)
     total += x
-    binding.pry
   end
-  end_game
+  end_game(total)
 end
     
