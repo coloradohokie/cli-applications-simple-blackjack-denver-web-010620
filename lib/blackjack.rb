@@ -43,7 +43,7 @@ def hit?(argument)
     end_game(argument)
   else
     invalid_command
-    prompt_user
+    hit?(argument)
   end
 end
 
