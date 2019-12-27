@@ -42,6 +42,7 @@ def hit?(argument)
   elsif resp == 'exit'
     end_game(argument)
   else
+    invalid_command
     prompt_user
   end
 end
