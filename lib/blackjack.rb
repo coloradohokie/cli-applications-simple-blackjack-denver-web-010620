@@ -37,7 +37,7 @@ def hit?(argument)
   prompt_user
   resp = get_user_input
   if resp == 'h'
-    deal_card + argument
+    argument += deal_card
   elsif resp == 's'
     return argument
   elsif resp == 'exit'
